@@ -1,0 +1,53 @@
+Insomnia
+
+----------
+POST - CadUsuario - 
+http://localhost:5432/usuario
+
+JSON
+{
+	"nome": "",
+	"email": "",
+	"senha": "", 
+	"phone": "",
+	"cpf": ""
+}
+
+----------
+POST - Login - 
+http://localhost:5432/login
+
+{
+	"email": "",
+	"senha":""
+}
+
+----------
+
+cadastrar / editar / listar - clientes
+editar usuário logado
+
+------------------##########-----------------------##################-------------------
+//host: 'ec2-44-196-174-238.compute-1.amazonaws.com'
+
+/*
+const pool = new Pool({
+    user: 'oyeirzzedorygu',
+    host: 'postgres://oyeirzzedorygu:a9b1f2a03beb78be39e15774c909a0f19740ca1e28586e6dc426ea8afbc00341@ec2-44-196-174-238.compute-1.amazonaws.com:5432/dfd8828q4iosk1',
+    database: 'dfd8828q4iosk1',
+    password: 'a9b1f2a03beb78be39e15774c909a0f19740ca1e28586e6dc426ea8afbc00341',
+    port: 5432
+});
+*/
+
+dados server final
+const pool = new Pool({
+    user: 'yshwimzblsgmjn',
+    host: 'ec2-3-234-131-8.compute-1.amazonaws.com',
+    database: 'd6bdnkop7ogiu1',
+    password: '832fce61c2c208feb5a99342b30b0a841339bcee937b9dc32d3b770fb20f7eac',
+    port: 5432,
+    ssl: {
+        rejectUnauthorized: false
+    }
+});
